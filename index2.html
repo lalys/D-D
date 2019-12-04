@@ -15,7 +15,7 @@
         <span class="input-group-addon">
             <span class="glyphicon glyphicon-search"></span>
         </span>
-        <input type="text" class="form-control" ng-model="main.searchInput">
+        <input type="text" class="form-control" ng-model="main2.searchInput">
     </div>
     -------------------------------------------------------------------------------
     <h3>Characters</h3>
@@ -23,18 +23,18 @@
 
         <button class="button" ng-repeat="show in main.shows | filter:main.searchInput "><span></span> {{show.name}} <span class="badge">{{show.type}}</span></button>
         <select id = "selView">
-            <option value = "#FFFFFF">White</option>
+            <option class="button" ng-repeat="show in main.shows | filter:main.searchInput "><span></span> {{show.name}} <span class="badge">{{show.type}}</span></option>
         </select>
     </ul>
     ----------------------------------------------------------------------------
     <h3>Add a new Player</h3>
-    <form name="main.addForm" class="form" ng-submit="main.addPerson()">
+    <form name="main2.addForm" class="form" ng-submit="main2.addPerson()">
     </form>
         <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" ng-model="main.new.name" required/>
+            <input type="text" class="form-control" ng-model="main2.new.name" required/>
             <label>Stuff</label>
-            <input type="text" class="form-control" ng-model="main.new.stuff" required/>
+            <input type="text" class="form-control" ng-model="main2.new.stuff" required/>
         </div>
         <div class="row">
             <div class="col-xs-6">

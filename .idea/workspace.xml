@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d85c40e-8162-4848-8fe3-d6d7d2a593fc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0d85c40e-8162-4848-8fe3-d6d7d2a593fc" name="Default" comment="Update from main to main2&#10;Comment out vm.searchInput">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.ctrl.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,8 +88,31 @@
       <option name="presentableId" value="Default" />
       <updated>1417416354643</updated>
       <workItem from="1575321927020" duration="188000" />
-      <workItem from="1575322840864" duration="741000" />
+      <workItem from="1575322840864" duration="982000" />
+      <workItem from="1575426581071" duration="4161000" />
     </task>
+    <task id="LOCAL-00001" summary="Create files needed for web-page&#10;Add basic layout to web-page">
+      <created>1575323723559</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575323723559</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update script src to main2">
+      <created>1575323812149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575323812149</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add new player button and fields &quot;Does not work&quot;&#10;Add new player functionality&#10;Show list of characters&#10;Try to add their views">
+      <created>1575430481221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575430481221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +135,12 @@
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create files needed for web-page&#10;Add basic layout to web-page" />
+    <MESSAGE value="Update script src to main2" />
+    <MESSAGE value="Add new player button and fields &quot;Does not work&quot;&#10;Add new player functionality&#10;Show list of characters&#10;Try to add their views" />
+    <MESSAGE value="Update from main to main2&#10;Comment out vm.searchInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update from main to main2&#10;Comment out vm.searchInput" />
   </component>
 </project>
