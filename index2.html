@@ -17,6 +17,34 @@
         </span>
         <input type="text" class="form-control" ng-model="main.searchInput">
     </div>
+    -------------------------------------------------------------------------------
+    <h3>Characters</h3>
+    <ul class="list-group">
+
+        <button class="button" ng-repeat="show in main.shows | filter:main.searchInput "><span></span> {{show.name}} <span class="badge">{{show.type}}</span></button>
+        <select id = "selView">
+            <option value = "#FFFFFF">White</option>
+        </select>
+    </ul>
+    ----------------------------------------------------------------------------
+    <h3>Add a new Player</h3>
+    <form name="main.addForm" class="form" ng-submit="main.addPerson()">
+    </form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" ng-model="main.new.name" required/>
+            <label>Stuff</label>
+            <input type="text" class="form-control" ng-model="main.new.stuff" required/>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+            </div>
+            <div>
+                <button class="btn"><span></span> Add</button>
+            </div>
+        </div>
+
+    </form>
 </div>
 </body>
 </html>
