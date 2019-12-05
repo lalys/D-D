@@ -8,23 +8,54 @@
     <script src="app.js"></script>
     <script src="main2.ctrl.js"></script>
 </head>
-<body ng-app="app" ng-controller="MainController as main">
+<body ng-app="app" ng-controller="Main2Controller as main">
 <div class="container">
     <h1>{{main.title}}</h1>
     <div class="input-group">
         <span class="input-group-addon">
             <span class="glyphicon glyphicon-search"></span>
         </span>
-        <input type="text" class="form-control" ng-model="main2.searchInput">
+        <input type="text" class="form-control" ng-model="main2.searchInput2">
     </div>
     -------------------------------------------------------------------------------
     <h3>Characters</h3>
     <ul class="list-group">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="show in main.shows | filter:main.searchInput2 | orderBy:main2.order.key:main2.order.reverse"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span> {{show.title}} <span class="badge">{{show.year}}</span></li>
+        </ul>
 
-        <button class="button" ng-repeat="show in main.shows | filter:main.searchInput "><span></span> {{show.name}} <span class="badge">{{show.type}}</span></button>
-        <select id = "selView">
-            <option class="button" ng-repeat="show in main.shows | filter:main.searchInput "><span></span> {{show.name}} <span class="badge">{{show.type}}</span></option>
-        </select>
+        <button onclick="myFunction()">Laly View</button>
+
+        <p id="Lview"></p>
+        <p id="Lview2"></p>
+        <p id="Lview3"></p>
+        <p id="Lview4"></p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("Lview").innerHTML = "Ability = Teleport";
+                document.getElementById("Lview2").innerHTML = "Equipment = Dagger";
+                document.getElementById("Lview3").innerHTML = "Class = Mage";
+                document.getElementById("Lview4").innerText = "Race = Gnome";
+            }
+        </script>
+
+        <button onclick="myFunction2()">Hunter View</button>
+
+        <p id="Hview"></p>
+        <p id="Hview2"></p>
+        <p id="Hview3"></p>
+        <p id="Hview4"></p>
+
+        <script>
+            function myFunction2() {
+                document.getElementById("Hview").innerText = "Ability = Berserk";
+                document.getElementById("Hview2").innerText = "Equipment = Claymore";
+                document.getElementById("Hview3").innerText = "Class = Warrior";
+                document.getElementById("Hview4").innerText = "Race = Orc";
+            }
+        </script>
+
     </ul>
     ----------------------------------------------------------------------------
     <h3>Add a new Player</h3>
@@ -40,7 +71,7 @@
             <div class="col-xs-6">
             </div>
             <div>
-                <button class="btn"><span></span> Add</button>
+                <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
             </div>
         </div>
 

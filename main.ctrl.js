@@ -1,7 +1,7 @@
 angular.module('app').controller("MainController", function(){
     var vm = this;
     vm.title = 'AngularJS Tutorial Example';
-    //vm.searchInput = '';
+    vm.searchInput = '';
     vm.shows = [
         {
             title: 'Game of Thrones',

@@ -1,6 +1,6 @@
-angular.module('app').controller("MainController", function(){
+angular.module('app').controller("Main2Controller", function(){
     this.title = 'D&D Characters';
-    this.searchInput = '';
+    this.searchInput2 = '';
     this.shows = [
         {
             name: 'Laly',
