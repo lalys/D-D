@@ -1,4 +1,4 @@
-angular.module('app').controller("Main2Controller", function(){
+angular.module('app').controller("MainController", function(){
     this.title = 'D&D Characters';
     this.searchInput2 = '';
     this.shows = [

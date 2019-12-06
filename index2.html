@@ -8,22 +8,22 @@
     <script src="app.js"></script>
     <script src="main2.ctrl.js"></script>
 </head>
-<body ng-app="app" ng-controller="Main2Controller as main">
+<body ng-app="app" ng-controller="MainController as main">
 <div class="container">
     <h1>{{main.title}}</h1>
     <div class="input-group">
-        <span class="input-group-addon">
+        <!--<span class="input-group-addon">
             <span class="glyphicon glyphicon-search"></span>
         </span>
-        <input type="text" class="form-control" ng-model="main2.searchInput2">
+        <input type="text" class="form-control" ng-model="main2.searchInput">-->
     </div>
     -------------------------------------------------------------------------------
-    <h3>Characters</h3>
+    <h3>Character View</h3>
     <ul class="list-group">
-        <ul class="list-group">
+        <!--<ul class="list-group">
             <li class="list-group-item" ng-repeat="show in main.shows | filter:main.searchInput2 | orderBy:main2.order.key:main2.order.reverse"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span> {{show.title}} <span class="badge">{{show.year}}</span></li>
         </ul>
-
+        -->
         <button onclick="myFunction()">Laly View</button>
 
         <p id="Lview"></p>
@@ -39,7 +39,10 @@
                 document.getElementById("Lview4").innerText = "Race = Gnome";
             }
         </script>
+----------------------------------------------------------------------------------------------------------------------------
+        <p>
 
+        </p>
         <button onclick="myFunction2()">Hunter View</button>
 
         <p id="Hview"></p>
@@ -57,10 +60,8 @@
         </script>
 
     </ul>
-    ----------------------------------------------------------------------------
-    <h3>Add a new Player</h3>
+    <!--<h3>Add a new Player</h3>
     <form name="main2.addForm" class="form" ng-submit="main2.addPerson()">
-    </form>
         <div class="form-group">
             <label>Name</label>
             <input type="text" class="form-control" ng-model="main2.new.name" required/>
@@ -75,7 +76,7 @@
             </div>
         </div>
 
-    </form>
+    </form>-->
 </div>
 </body>
 </html>
