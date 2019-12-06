@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>D&D</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dnd.css">
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
     <script src="app.js"></script>
     <script src="main2.ctrl.js"></script>
 </head>
 <body ng-app="app" ng-controller="MainController as main">
 <div class="container">
-    <h1>{{main.title}}</h1>
+    <h1>D&D</h1>
     <div class="input-group">
         <!--<span class="input-group-addon">
             <span class="glyphicon glyphicon-search"></span>
         </span>
         <input type="text" class="form-control" ng-model="main2.searchInput">-->
     </div>
-    -------------------------------------------------------------------------------
-    <h3>Character View</h3>
+-------------------------------------------------------------------------------
+    <h3 style="color:Green">Character View</h3>
     <ul class="list-group">
         <!--<ul class="list-group">
             <li class="list-group-item" ng-repeat="show in main.shows | filter:main.searchInput2 | orderBy:main2.order.key:main2.order.reverse"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span> {{show.title}} <span class="badge">{{show.year}}</span></li>
@@ -56,6 +57,64 @@
                 document.getElementById("Hview2").innerText = "Equipment = Claymore";
                 document.getElementById("Hview3").innerText = "Class = Warrior";
                 document.getElementById("Hview4").innerText = "Race = Orc";
+            }
+        </script>
+
+    </ul>
+----------------------------------------------------------------------------------------------------------------------------
+    <h3 style="color:Red">Monsters</h3>
+    <ul class="list-group">
+        <button onclick="myFunction3()">Dragon</button>
+
+        <p id="dview"></p>
+        <p id="dview2"></p>
+        <p id="dview3"></p>
+        <p id="dview4"></p>
+
+        <script>
+            function myFunction3() {
+                document.getElementById("dview").innerHTML = "Defense = 20";
+                document.getElementById("dview2").innerHTML = "Health = 50";
+                document.getElementById("dview3").innerHTML = "Speed = 50";
+                document.getElementById("dview4").innerText = "Abilities = Flight";
+            }
+        </script>
+----------------------------------------------------------------------------------------------------------------------------
+        <p>
+
+        </p>
+        <button onclick="myFunction4()">Goblin</button>
+
+        <p id="gview"></p>
+        <p id="gview2"></p>
+        <p id="gview3"></p>
+        <p id="gview4"></p>
+
+        <script>
+            function myFunction4() {
+                document.getElementById("gview").innerText = "Defense = 15";
+                document.getElementById("gview2").innerText = "Health = 10";
+                document.getElementById("gview3").innerText = "Speed = 30";
+            }
+        </script>
+----------------------------------------------------------------------------------------------------------------------------
+        <p>
+
+        </p>
+        <button onclick="myFunction5()">Boblin the Goblin</button>
+
+        <p id="bview"></p>
+        <p id="bview2"></p>
+        <p id="bview3"></p>
+        <p id="bview4"></p>
+
+        <script>
+            function myFunction5() {
+                document.getElementById("bview").innerText = "Defense = 30";
+                document.getElementById("bview2").innerText = "Health = 1000";
+                document.getElementById("bview3").innerText = "Speed = 100";
+                document.getElementById("bview4").innerText = "Specialty = Friendly towards players";
+
             }
         </script>
 
